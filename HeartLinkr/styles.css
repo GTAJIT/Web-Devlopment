@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    size: 10;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#video {
+    width: 10%; /* or a specific width */
+    height: 10%; /* or a specific height */
+    object-fit: cover;
+    border-radius: 20px; /* optional */
+  }
+
+.card-container {
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 271px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.card h2, .card p {
+    margin: 0;
+    padding: 1em;
+}
+
+.like-btn, .dislike-btn {
+    width: 50%;
+    height: 40px;
+    left: 50%;
+    right: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.like-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dislike-btn {
+    background-color: #ff0000;
+    color: #fff;
+}

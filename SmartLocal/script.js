@@ -26,9 +26,10 @@ form.addEventListener('submit', function(event) {
     // Simple email validation
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailPattern.test(email)) {
-        alert('Please enter a valid email address.');
+        // alert('Please enter a valid email address.');
         emailInput.focus();
-    } else {
+    }
+    else {
         alert(`Email entered: ${email}`);
         // Implement further login logic here
     }

@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-.italianno-regular {
-    font-family: "Italianno", cursive;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Italianno&display=swap');
+.dm-sans-regular {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }  
+  }
+
+
 * {
     border: 0;
     box-sizing: border-box;

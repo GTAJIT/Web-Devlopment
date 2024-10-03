@@ -102,15 +102,17 @@ h1{
     margin-bottom: 2.25em;
 }
 
-.input-textbox{
+.input-textbox {
     width: 100%;
     background-color: transparent;
     border-radius: 0.75em;
     box-shadow: 0 0 0 0.125em hsl(223, 10%, 80%) inset;
     outline: transparent;
-    padding: 1.5em 1em 0.5em 1em;
-    padding-inline-end: 3.5em;
+    padding: 1em;
+    font-size: 1em;
+    line-height: 1.5em;
     appearance: none;
+    height: 3em;
 }
 
 .lable{

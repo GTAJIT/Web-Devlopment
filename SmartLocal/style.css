@@ -94,7 +94,7 @@ h1{
     top: 0.25em;
     bottom: 0.25em;
     left: 0.25em;
-    width: calc(50% - 0.5em);
+    width: calc(50% - 0.25em);
 }
 
 .field{

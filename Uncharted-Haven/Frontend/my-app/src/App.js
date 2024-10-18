@@ -1,11 +1,11 @@
 import './App.css'
 import Navbar from './Components/Navbar/Navbar';
 import { Routes, Route } from 'react-router-dom';
-import Shop from './pages/Shop'; // assuming this is the home page component
+import Shop from './Pages/Shop';
 import ShopCatagory from './Pages/ShopCatagory'
-import LoginSignup from './pages/LoginSignup';
-import Cart from './pages/Cart';
-import Product from './pages/Product';
+import LoginSignup from './Pages/LoginSignup';
+import Cart from './Pages/Cart';
+import Product from './Pages/Product';
 
 function App() {
   return (

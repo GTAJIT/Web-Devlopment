@@ -1,0 +1,124 @@
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sub-btn {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 10px blue;
+    text-shadow: 2px;
+    height: 36px;
+    width: 105px;
+    border-radius: 2%;
+    cursor: pointer;
+}
+.join-btn{
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    background-color: white;
+    border-color: blue;
+    border-radius: 2px;
+    border-style: solid;
+    height: 36px;
+    width: 105px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.buttons{
+    align-items: center;
+    justify-content: center;
+    font-style: bold;
+    font-size: 15px;
+}
+.uber-req{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: black;
+    color: white;
+    height: 36px;
+    width: 105px;
+    cursor: pointer;
+}
+.amazon{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: yellow;
+    color: black;
+    height: 36px;
+    width: 105px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.github{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: green;
+    color: white;
+    height: 36px;
+    width: 105px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bootstrap-get{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: rgb(121, 82, 179);
+    color: white;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+}
+.bootstrap-download{
+    align-items: center;
+    justify-content: center;
+    border-color: rgb(108, 117, 125);
+    background-color: white;
+    color: rgb(108, 117, 125);
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+.linkdin-apply{
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10,102,194);
+    height: 36px;
+    width: 220px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: small;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.linkdin-save{
+    align-items: center;
+    justify-content: center;
+    border-color: rgb(10,102,194);
+    background-color: white;
+    color: rgb(10,102,194);
+    height: 36px;
+    width: 105px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+}

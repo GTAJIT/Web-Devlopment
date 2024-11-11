@@ -1,0 +1,34 @@
+body{
+    inset: 0;
+}
+
+.point{
+    padding: 20px;
+}
+
+.heading{
+    justify-content: flex-start;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    border: solid;
+    border-width: 5px;
+    padding: 0px;
+    width: 100vh;
+}
+
+.main-body{
+    padding: 10px;
+}
+
+.img{
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

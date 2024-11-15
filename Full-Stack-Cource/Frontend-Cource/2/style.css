@@ -1,0 +1,32 @@
+body{
+    background-color: antiquewhite;
+}
+
+.body-main{
+    border-radius: 25px;
+    background-color: aquamarine;
+    position: relative;
+}
+
+.img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 50%;
+    width: 50%;
+    border-radius: 25px;
+    background-size: cover;
+    object-fit: cover;
+}
+.img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    border-radius: 25px;
+    background-size: cover;
+    object-fit: cover;
+}

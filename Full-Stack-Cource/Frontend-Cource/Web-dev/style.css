@@ -1,0 +1,15 @@
+.img{
+    width: 400px;
+    border-radius: 25px;
+}
+.about{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    background-color: antiquewhite;
+    border: 5px black;
+    border-radius: 10px;
+    padding: 5px;
+}

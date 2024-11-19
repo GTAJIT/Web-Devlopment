@@ -34,9 +34,20 @@ body {
     border-style: solid;
     border-color: #e5e3e3;
 }
+.name{
+    margin-left: 5px;
+    text-transform: uppercase;
+}
 .logo{
     flex: 1;
     text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.5em;
+    line-height: 1;
+    margin-left: 10px;
+    width: 9rem;
 }
 .pages{
     display: flex;

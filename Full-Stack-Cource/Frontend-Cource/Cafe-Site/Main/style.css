@@ -121,6 +121,7 @@
     font-size: 40px;
     align-content: center;
     color: #655b4f;
+    background-color: aqua;
 }
 .logo-text{
     align-items: center;
@@ -149,3 +150,14 @@
 
 /* content done  */
 
+.fill{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.fill-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}

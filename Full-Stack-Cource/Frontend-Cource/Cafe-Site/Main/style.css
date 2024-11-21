@@ -272,3 +272,36 @@
 
 /* fill done  */
 
+.about{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+.about-icon{
+    text-align: left;
+    justify-content: left;
+    font-size: 1.5em;
+    line-height: 1;
+    margin-left: 10px;
+}
+.about-about{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-top: 10px;
+}
+.about-text{
+    font-size: .75em;
+}
+.socal{
+    text-align: center;
+    font-size: 1em;
+    line-height: 1;
+    margin-right: 15px
+}
+.socal-icons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}

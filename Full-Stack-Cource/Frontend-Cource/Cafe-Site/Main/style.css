@@ -29,7 +29,6 @@
     position: relative;
 }
 .name{
-    margin-left: 5px;
     text-transform: uppercase;
 }
 .logo-main{
@@ -157,22 +156,12 @@
 .st-set-img{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* content done  */
 
-.fill{
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-.fill-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
 
 .pic{
     position: relative;
@@ -181,8 +170,8 @@
 }
 .pic-img{
     margin: 10px;
-    height: 15rem;
-    width: 13rem;
+    height: 20rem;
+    width: 18rem;
     border-radius: 10px;
 }
 .pic-text{
@@ -207,6 +196,7 @@
 .order{
     float: right;
     margin: 5px;
+    margin-bottom: 10px;
     border-radius: 25px;
     border: none;
     cursor: pointer;
@@ -221,16 +211,48 @@
 .order:hover .order-text-2{
     color: var(--text-color);
 }
+.heart-wrapper {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.heart-checkbox {
+    display: none; /* Hide the checkbox */
+}
+
+.heart-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Change color when checkbox is checked */
+.heart-checkbox:checked + .heart-icon {
+    color: red;
+}
 
 /* content done */
 
 .fill{
+    background-color: #afa49e;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+    font-size: 2rem;
+}
+.fill-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 .fill-btn{
+    margin-top: 5px;
     float: right;
     margin: 5px;
     border-radius: 25px;
@@ -248,5 +270,5 @@
     color: var(--text-color);
 }
 
-
 /* fill done  */
+

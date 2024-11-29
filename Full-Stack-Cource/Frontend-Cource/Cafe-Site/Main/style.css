@@ -236,7 +236,7 @@
 /* content done */
 
 .fill{
-    background-color: #afa49e;
+    background-image: url(/Full-Stack-Cource/Frontend-Cource/Cafe-Site/Assets/);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,6 +244,7 @@
     align-content: center;
     padding: 100px;
     font-size: 2rem;
+    /* background-color: #007bff; */
 }
 .fill-content{
     display: flex;
@@ -271,11 +272,47 @@
 }
 
 /* fill done  */
+.feedback{
+    display: flex;
+    align-items: center;
+    border: 2px solid #e5e3e3;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: white;
+}
+.feedback-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1rem;
+    flex: 1;
+    border-radius: 15px 0 0 15px;
+}
 
+.feedback-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 0 15px 15px 0;
+}
+
+.feedback-btn i {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.feedback-btn:hover i {
+    color: #007bff;
+}
+
+/* feedback done  */
 .about{
+    padding-top: .5rem;
+    background-color: var(--content-btn-color);
+    color: var(--primary-color);
     display: flex;
     justify-content: space-between;
-    margin-top: .5rem;
 }
 .about-icon{
     text-align: left;

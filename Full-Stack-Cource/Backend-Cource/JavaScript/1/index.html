@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">
+        Hi, 
+        I'm Jit
+    </h1>
+    <p id="pera">
+        tap the btn for time...
+    </p>
+    <button class="btn" onclick="document.getElementById('pera').innerHTML = 'Hello JavaScript'">
+        <p class="btn-text"  onclick="document.getElementById('demo').innerHTML = Date()" >time</p>
+    </button>
+    <p id="demo"></p>
+    <button id="btn-2" class="btn" onclick="document.getElementById('demo-2').style.display = 'block'">
+        <p class="btn-text">click me</p>
+    </button>
+    <p class="hiden" id="demo-2" style="display: none;">I'm done !</p>
+    <p id="demo-3"></p>
+    <button id="btn-3" class="btn" onclick="myfunction()">
+        <p class="btn-text">function</p>
+    </button>
+    <p id="demo-4"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    background-color: rgba(0, 255, 255, 0.553);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    margin: 0%;
+}
+.btn{
+    border-radius: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(137, 43, 226, 0.152);
+}
+.btn-text{
+    text-transform: uppercase;
+    text-shadow: 2px;
+}
+.btn:hover{
+    transition: 500ms;
+    background-color: rgba(0, 255, 255, 0.437);
+    cursor: grab;
+}

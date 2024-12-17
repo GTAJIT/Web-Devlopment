@@ -1,0 +1,255 @@
+
+:root {
+    --heading-font: 'Verdana', sans-serif;
+    --body-font: 'Arial', sans-serif;
+    --background-color: rgba(255,82,0,255);
+    --text-color: rgba(255,255,255,255);
+    --heading-text-colour: #454547;
+    --title-text-colour: #9d9d9d;
+    --heading-text-bg-colour: #fff1e8;
+
+}
+
+.headder{
+    /* padding: 32px 0; */
+    padding: 32px 0;
+    position: relative;
+    background: #ff5200;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1001;
+}
+.headder-main{
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.swiggy-logo{
+    width: 10rem;
+    height: 10%;
+}
+.header-end{
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.pages{
+    display: flex;
+    gap: 1rem;
+}
+
+.btns{
+    display: flex;
+    gap: 1rem;
+}
+#btn{
+width: 8rem;
+border-radius: 20px;
+}
+.btn-text{
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+/* btn-1 si */
+.btn-1 {
+-webkit-tap-highlight-color: transparent;
+background-color: white;
+background-image: none;
+color: black;
+cursor: pointer;
+font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+font-size: 1rem; /* Adjust font size for better readability */
+line-height: 1.5;
+margin: 0;
+padding: 0.8rem 2rem; /* Proper padding for size */
+border: none;
+border-radius: 30px; /* Keep smooth button corners */
+box-sizing: border-box;
+display: inline-block;
+font-weight: 900;
+overflow: hidden;
+text-transform: uppercase;
+position: relative;
+transition: all 0.3s ease; /* Smooth transition */
+}
+
+.btn-1:hover {
+transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.btn-1 .original {
+background: black;
+color: var(--text-color);
+display: grid;
+inset: 0;
+place-content: center;
+position: absolute;
+transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-1:hover .original {
+transform: translateY(100%);
+}
+
+.btn-1 .letters {
+display: inline-flex;
+}
+
+.btn-1 span {
+opacity: 0;
+transform: translateY(-15px);
+transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.3s;
+}
+
+.btn-1 span:nth-child(2n) {
+transform: translateY(15px);
+}
+
+.btn-1:hover span {
+opacity: 1;
+transform: translateY(0);
+}
+
+.btn-1:hover span:nth-child(2) {
+transition-delay: 0.1s;
+}
+
+.btn-1:hover span:nth-child(3) {
+transition-delay: 0.2s;
+}
+
+.btn-1:hover span:nth-child(4) {
+transition-delay: 0.3s;
+}
+
+.btn-1:hover span:nth-child(5) {
+transition-delay: 0.4s;
+}
+
+.btn-1:hover span:nth-child(6) {
+transition-delay: 0.5s;
+}
+  
+/* btn-4 dl */
+/* Styling for the button */
+.btn-4 {
+--width: 160px;
+--height: 64px;
+--tooltip-height: 40px;
+--tooltip-width: 120px;
+--gap-between-tooltip-to-button: 18px;
+/* --button-color: #000;
+--tooltip-color: #fff; */
+width: var(--width);
+height: var(--height);
+background: var(--button-color);
+position: relative;
+text-align: center;
+border-radius: 32px;
+font-family: inherit;
+font-size: 18px;
+color: white;
+cursor: pointer;
+transition: background 0.3s ease, color 0.3s ease;
+overflow: hidden; /* Prevents overflow issues */
+}
+
+.btn-4::before {
+position: absolute;
+content: attr(data-tooltip);
+width: var(--tooltip-width);
+height: var(--tooltip-height);
+background-color: var(--tooltip-color);
+font-size: 14px;
+color: #111;
+text-align: center;
+border-radius: 6px;
+line-height: var(--tooltip-height);
+bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+left: calc(50% - var(--tooltip-width) / 2);
+opacity: 0; /* Initially hidden */
+visibility: hidden;
+transition: opacity 0.3s ease, transform 0.3s ease;
+z-index: 1;
+}
+
+.btn-4::after {
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 8px 8px 0 8px;
+border-color: var(--tooltip-color) transparent transparent transparent;
+bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 8px);
+left: calc(50% - 8px);
+opacity: 0; /* Initially hidden */
+visibility: hidden;
+transition: opacity 0.3s ease, transform 0.3s ease;
+z-index: 1;
+}
+
+/* Text and icon inside the button */
+.btn-4 .text {
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+transition: top 0.5s ease;
+}
+
+.btn-4 .icon {
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 100%;
+color: white;
+transition: top 0.5s ease;
+}
+
+.btn-4 .icon svg {
+width: 24px;
+height: 24px;
+}
+
+/* Hover effects */
+.btn-4:hover {
+background: #8f44fd;
+color: white;
+}
+
+.btn-4:hover .text {
+top: -100%; /* Move the text out of view */
+}
+
+.btn-4:hover .icon {
+top: 0; /* Bring the icon into view */
+}
+
+.btn-4:hover::before,
+.btn-4:hover::after {
+opacity: 1; /* Show tooltip */
+visibility: visible;
+}

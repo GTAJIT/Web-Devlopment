@@ -1,0 +1,250 @@
+:root {
+    --primary-color: #e5e3e3;
+    --secondary-color: #dbdad7;
+    --text-color: #333;
+    --heading-font: 'Arial', sans-serif;
+    --body-font: 'Verdana', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+
+.heading h1 {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 5px;
+    position: relative;
+    border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e5e3e3;
+}
+.name{
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+.logo{
+    flex: 1;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.5em;
+    line-height: 1;
+    margin-left: 10px;
+    width: 9rem;
+}
+.pages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 3px;
+    justify-content: center;
+    gap: 20px;
+}
+.page-info{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.outhers{
+    flex: 1;
+    text-align: right; 
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e5e3e3;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1rem;
+    flex: 1;
+    border-radius: 15px 0 0 15px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 0 15px 15px 0;
+}
+
+.search-btn i {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.search-btn:hover i {
+    color: #007bff;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px;
+}
+.fav{
+    padding: 2px;
+}
+.cart{
+    padding: 2px;
+}
+.fav i, .cart i {
+    font-size: 1.5rem; 
+    color: #333; 
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.fav i:hover, .cart i:hover {
+    color: #ff5252;
+}
+
+/* header ends here */
+
+.content{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 15px;
+}
+.content-first-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+}
+.content-text{
+    background-color: #dbdad7;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+.heading{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sub-heading{
+    margin-top: 100px;
+}
+.content-group{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.group-1{
+    background-image: url(/Full-Stack-Cource/Frontend-Cource/Clothing-site/Assets/👩_❤️_👨.jpeg);
+    height: 45vh;
+    width: 50%;
+    background-size: cover;
+    border-radius: 15px;
+}
+.group-2{
+    background-image: url(/Full-Stack-Cource/Frontend-Cource/Clothing-site/Assets/download.jpeg);
+    height: 45vh;
+    width: 50%;
+    background-size: cover;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+.group-heading{
+    text-transform: uppercase;
+    display: flex;
+    align-items: baseline;
+    color: white;
+    bottom: 0%;
+    position: absolute;
+    margin-left: 10px;
+}
+.content-second-part{
+    background-image: url(/Full-Stack-Cource/Frontend-Cource/Clothing-site/Assets/8e48c832-8376-48ef-af1f-36cfee0ff898.jpeg);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    border-radius: 15px;
+    margin: 5px;
+}
+/* content end */
+/* for phone */
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pages {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-group {
+        flex-direction: column;
+    }
+
+    .group-1, .group-2 {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .content-second-part {
+        height: 60vh;
+        width: 100%;
+    }
+    .content-group {
+        flex-direction: column;
+    }
+
+    .group-1, .group-2 {
+        width: 100%; 
+        height: 30vh;
+        margin: 5px 0;
+        position: relative;
+    }
+
+    .group-heading {
+        bottom: 10px; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem; 
+    }
+}
